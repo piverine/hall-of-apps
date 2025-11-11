@@ -3,14 +3,14 @@ import Link from 'next/link';
 
 import { UpvoteButton } from '@/components/UpvoteButton';
 
-interface App {
-  id: string;
-  name: string;
-  description: string;
-  url: string;
-  upvotes: number;
-  createdAt: Date;
-}
+// interface App {
+//   id: string;
+//   name: string;
+//   description: string;
+//   url: string;
+//   upvotes: number;
+//   createdAt: Date;
+// }
 
 export default async function Home() {
   // 1. Fetch data directly from the database (on the server)
