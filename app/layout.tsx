@@ -8,6 +8,8 @@ import Header from "@/components/Header";
 import { StackProvider, StackTheme } from "@stackframe/stack";
 import { stackServerApp } from "@/stack/server";
 
+import { stack } from "@/stack";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
