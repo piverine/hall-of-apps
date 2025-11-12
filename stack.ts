@@ -24,5 +24,7 @@ import { StackServerApp } from "@stackframe/stack";
 
 export const stack = new StackServerApp({
   tokenStore: "nextjs-cookie",
-  secretKey: process.env.STACK_SECRET_SERVER_KEY,
+  // The "!" tells TypeScript: "I promise this variable exists in .env.local"
+  // secretKey: process.env.STACK_SECRET_SERVER_KEY!, 
+  // projectId: process.env.NEXT_PUBLIC_STACK_PROJECT_ID!,
 });
