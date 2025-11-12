@@ -13,8 +13,8 @@
 
 
 import { StackHandler } from "@stackframe/stack";
-import { stackServerApp } from "@/stack/server";
+import { stack } from "@/stack";
 
 export default function Handler(props: unknown) {
-  return <StackHandler fullPage app={stackServerApp} routeProps={props} />;
+  return <StackHandler fullPage app={stack} routeProps={props} />;
 }
