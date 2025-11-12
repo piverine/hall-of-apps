@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 // import { StackProvider } from "@stackframe/stack"; // <-- 1. ADD THIS IMPORT
 
 import { StackProvider, StackTheme } from "@stackframe/stack";
-import { stackServerApp } from "@/stack/server";
+// import { stackServerApp } from "@/stack/server";
 
 import { stack } from "@/stack";
 
@@ -36,7 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <StackProvider app={stackServerApp}> {/* <-- 2. WRAP YOUR CHILDREN */}
+        <StackProvider app={stack}> {/* <-- 2. WRAP YOUR CHILDREN */}
           <StackTheme>
             <Header />
           {children}
